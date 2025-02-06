@@ -72,7 +72,6 @@ async function getCurrentUser(): Promise<ApiResponse<UserResponse>> {
             headers: {
                 "Content-Type": "application/json",
             },
-             include: "credentials",
         });
 
         if (!response.ok) {
