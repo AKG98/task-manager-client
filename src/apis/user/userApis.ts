@@ -67,7 +67,7 @@ async function loginUser(user: User): Promise<ApiResponse<UserResponse>> {
 
 async function getCurrentUser(): Promise<ApiResponse<UserResponse>> {
     try {
-        const response = await fetch("https://task-manager-backend-b75l.onrender.com/api/users/current-user", {
+        const response = await fetch("/api/users/current-user", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
